@@ -1,0 +1,30 @@
+ALGORITHM test
+VAR
+chr: String;
+i,word_count,vowl:integer :=0;
+
+
+BEGIN
+write("saisir une chaine !");
+read(chr);
+chr:=chr+".";
+writeln("longeur de la chaine est :",length(chr));
+
+for i de 1 a length(chr) step 1 do
+
+if (chr[i] ==" ") then
+word_count++;
+endIf;
+
+
+if(chr[i]=="A" or "E" or "I" or "O" or "U" or "a" or "e" or "i" or "o" or "u") then
+vowl++;
+endif;
+
+endFor;
+
+writeln("number of word_count",word_count);
+writeln"number of vowels", vowl);
+
+
+END
